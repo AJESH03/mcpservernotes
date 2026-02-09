@@ -36,4 +36,4 @@ def read_notes() -> str:
     except Exception as e:
         return f"Error reading file {filename}: {e}"
     
-mcp.run(transport="streamable-http")
+mcp.run(transport="streamable-http", host="0.0.0.0", port=8000)
